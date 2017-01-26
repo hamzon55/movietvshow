@@ -12,3 +12,4 @@ public interface MovieData {
     public Integer countMovies();
 
 }
+
