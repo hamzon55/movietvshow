@@ -2,5 +2,8 @@
     <string name="app_name">MovieSerie</string>
     <string name="add_movie_tvshow">Add</string>
     <string name="List_movie_tvshow">List</string>
+    <string name="List_movie">movielist</string>
+    <string name="List_tvshow">tvshowlist</string>
+
 
 </resources>
