@@ -30,13 +30,16 @@ public class RVAdapter extends RecyclerView.Adapter< RVAdapter.MovieViewHolder> 
         this.movies = movies;
     }
 
+    @Override
+    public void onAttachedToRecyclerView(RecyclerView recyclerView) {
+        super.onAttachedToRecyclerView(recyclerView);
 
-
+    }
 
 
     @Override
     public RVAdapter.MovieViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_list_movie_show ,parent,false);
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_item ,parent,false);
         MovieViewHolder fvh= new MovieViewHolder(v);
         return  fvh;
     }

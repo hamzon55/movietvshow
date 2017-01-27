@@ -23,7 +23,7 @@ public class ListMovieShow extends AppCompatActivity {
 
         LinearLayoutManager llm = new LinearLayoutManager(this);
         rv.setLayoutManager(llm);
-        rv.setHasFixedSize(true);
+
 
 
 
