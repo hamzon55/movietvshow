@@ -42,7 +42,9 @@ public class RVAdapter extends RecyclerView.Adapter< RVAdapter.MovieViewHolder> 
     }
 
     @Override
-    public void onBindViewHolder(RVAdapter.MovieViewHolder holder, int position) {
+    public void onBindViewHolder(RVAdapter.MovieViewHolder holder, int i) {
+
+        holder.movieName.setText(movies.get(i).getName());
 
     }
 
