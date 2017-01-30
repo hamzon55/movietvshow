@@ -17,6 +17,8 @@
         </activity>
         <activity android:name=".AddMovie" />
         <activity android:name=".ListMovieShow"></activity>
+        <activity android:name=".ListTvShow"></activity>
+
     </application>
 
 </manifest>

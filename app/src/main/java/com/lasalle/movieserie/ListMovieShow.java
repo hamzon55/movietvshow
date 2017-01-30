@@ -37,7 +37,7 @@ public class ListMovieShow extends AppCompatActivity {
 
 
     private  void initializeAdapter() {
-        RVAdapter adapter = new RVAdapter(movies);
+        MovieAdapter adapter = new MovieAdapter(movies);
         rv.setAdapter(adapter);
 
 

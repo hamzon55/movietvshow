@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-
+    private  Button b0;
     private Button list;
     private Button add;
 
@@ -18,10 +18,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        b0 = (Button) findViewById(R.id.button0);
         list = (Button) findViewById(R.id.list);
         add = (Button) findViewById(R.id.add);
         list.setOnClickListener(this);
         add.setOnClickListener(this);
+        b0.setOnClickListener(this);
 
     }
 
@@ -38,7 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
 
             case R.id.add: {
-                Intent intent = new Intent(getApplicationContext(), AddMovie.class);
+                Intent intent = new Intent(getApplicationContext(),ListTvShow.class);
                 startActivity(intent);
                 break;
             }
