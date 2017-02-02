@@ -35,6 +35,15 @@ public class ListMovieShow extends AppCompatActivity {
     }
 
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        movies=movieManager.getMovies();
+        initializeAdapter();
+    }
+
+
     private void initializeAdapter() {
         MovieAdapter adapter = new MovieAdapter(movies);
         rv.setAdapter(adapter);
