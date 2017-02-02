@@ -52,7 +52,7 @@ public class AddTvShow extends AppCompatActivity implements View.OnClickListener
 
     private void addtv() {
         String newSerie = serie.getText().toString();
-        String newSeason = season.getText().toString();
+        Integer newSeason = Integer.valueOf(season.getText().toString());
         String newStar = star.getText().toString();
 
         TvShow tv = new TvShow(newSerie,newSeason,newStar);

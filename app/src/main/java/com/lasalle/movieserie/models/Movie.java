@@ -7,10 +7,10 @@ package com.lasalle.movieserie.models;
 public class Movie {
 
     private String name;
-    private String year;
+    private Integer year;
     private String director;
 
-    public Movie(String name, String year, String director) {
+    public Movie(String name, Integer year, String director) {
         this.name = name;
         this.year = year;
         this.director = director;
@@ -25,11 +25,11 @@ public class Movie {
         this.name = name;
     }
 
-    public String getYear() {
+    public Integer getYear() {
         return year;
     }
 
-    public void setYear(String year) {
+    public void setYear(Integer year) {
         this.year = year;
     }
 

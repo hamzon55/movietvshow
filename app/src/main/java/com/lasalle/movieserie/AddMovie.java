@@ -52,7 +52,7 @@ public class AddMovie extends AppCompatActivity implements View.OnClickListener 
 
     private void addMovie() {
         String newName = name.getText().toString();
-        String newYear = year.getText().toString();
+        Integer newYear = Integer.valueOf(year.getText().toString());
         String newDirector = director.getText().toString();
         Movie movie = new Movie(newName, newYear, newDirector);
         movieManager.add(movie);

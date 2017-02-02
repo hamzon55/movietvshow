@@ -7,10 +7,10 @@ package com.lasalle.movieserie.models;
 public class TvShow {
 
     private String serie;
-    private String seasons;
+    private Integer seasons;
     private String star;
 
-    public TvShow(String serie, String seasons, String star) {
+    public TvShow(String serie, Integer seasons, String star) {
         this.serie = serie;
         this.seasons = seasons;
         this.star = star;
@@ -26,11 +26,11 @@ public class TvShow {
         this.serie = serie;
     }
 
-    public String getSeasons() {
+    public Integer getSeasons() {
         return seasons;
     }
 
-    public void setSeasons(String seasons) {
+    public void setSeasons(Integer seasons) {
         this.seasons = seasons;
     }
 

@@ -17,9 +17,9 @@ public class MovieDataMock implements MovieData {
     public MovieDataMock() {
 
         movieList = new ArrayList<>();
-        movieList.add(new Movie("movie1", "1989", "Director Sebas"));
-        movieList.add(new Movie("movie2", "1988", "Director Sebas"));
-        movieList.add(new Movie("movie3", "1999", "Director Sebas"));
+        movieList.add(new Movie("movie1", 1989, "Director Sebas"));
+        movieList.add(new Movie("movie2", 1988, "Director Sebas"));
+        movieList.add(new Movie("movie3", 1999, "Director Sebas"));
     }
 
 
