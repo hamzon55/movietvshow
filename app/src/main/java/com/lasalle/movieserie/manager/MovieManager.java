@@ -18,20 +18,22 @@ public class MovieManager {
         movieData = new MovieDataMock();
     }
 
-//    public Movie getNextMovie() {
-//        return movieData.getMovie(0);
-//    }
-//
-//    public Integer countMovies() {
-//        return movieData.countMovies();
-//    }
+    public Movie getNextMovie() {
+        return movieData.getMovie(0);
+    }
+
+    public Integer countMovies() {
+        return movieData.countMovies();
+    }
 
     public List<Movie> getMovies(){
        return movieData.getMovies();
     }
 
 
-
+    public void add(Movie movie) {
+         movieData.add(movie);
+    }
 }
 
 

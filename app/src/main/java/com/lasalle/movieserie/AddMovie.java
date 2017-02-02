@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.lasalle.movieserie.manager.MovieManager;
 import com.lasalle.movieserie.models.Movie;
 
 public class AddMovie extends AppCompatActivity implements View.OnClickListener {
@@ -15,6 +16,8 @@ public class AddMovie extends AppCompatActivity implements View.OnClickListener 
     private EditText name;
     private EditText year;
     private EditText director;
+    private MovieManager movieManager;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +30,8 @@ public class AddMovie extends AppCompatActivity implements View.OnClickListener 
         director = (EditText) findViewById(R.id.director);
         addmovie.setOnClickListener(this);
 
+
+        movieManager = new MovieManager();
 
     }
 
@@ -50,6 +55,9 @@ public class AddMovie extends AppCompatActivity implements View.OnClickListener 
         String newYear = year.getText().toString();
         String newDirector = director.getText().toString();
         Movie movie = new Movie(newName, newYear, newDirector);
+        movieManager.add(movie);
+
     }
+
 }
 

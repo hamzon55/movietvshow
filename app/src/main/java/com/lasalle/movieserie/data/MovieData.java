@@ -13,5 +13,7 @@ public interface MovieData {
     public Movie getMovie (int movieId);
     public Integer countMovies();
     List<Movie> getMovies();
+
+    void add(Movie movie);
 }
 

@@ -28,6 +28,8 @@ public class MovieDataMock implements MovieData {
         return movieList.get(movieId);
     }
 
+
+
     @Override
     public Integer countMovies() {
         return movieList.size();
@@ -36,5 +38,10 @@ public class MovieDataMock implements MovieData {
     @Override
     public List<Movie> getMovies() {
         return movieList;
+    }
+
+    @Override
+    public void add(Movie movie) {
+        movieList.add(movie);
     }
 }
