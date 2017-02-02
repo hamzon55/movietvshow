@@ -27,7 +27,7 @@ public class ListMovieShow extends AppCompatActivity {
         rv.setLayoutManager(llm);
 
 
-        movieManager = new MovieManager();
+        movieManager =  MovieManager.getInstance();
         movies = movieManager.getMovies();
 
         initializeAdapter();

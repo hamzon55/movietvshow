@@ -8,14 +8,13 @@ public class Movie {
 
     private String name;
     private String year;
-    private  String director ;
+    private String director;
 
     public Movie(String name, String year, String director) {
         this.name = name;
         this.year = year;
         this.director = director;
     }
-
 
 
     public String getName() {

@@ -31,7 +31,7 @@ public class AddMovie extends AppCompatActivity implements View.OnClickListener 
         addmovie.setOnClickListener(this);
 
 
-        movieManager = new MovieManager();
+        movieManager =  MovieManager.getInstance();
 
     }
 

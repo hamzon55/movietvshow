@@ -12,11 +12,21 @@ import java.util.List;
 
 public class MovieManager {
 
+    private static MovieManager instance = null;
     private MovieData movieData;
 
-    public  MovieManager(){
+
+    protected MovieManager() {
         movieData = new MovieDataMock();
     }
+
+    public static MovieManager getInstance() {
+        if (instance == null) {
+            instance = new MovieManager();
+        }
+        return instance;
+    }
+
 
     public Movie getNextMovie() {
         return movieData.getMovie(0);
@@ -26,13 +36,13 @@ public class MovieManager {
         return movieData.countMovies();
     }
 
-    public List<Movie> getMovies(){
-       return movieData.getMovies();
+    public List<Movie> getMovies() {
+        return movieData.getMovies();
     }
 
 
     public void add(Movie movie) {
-         movieData.add(movie);
+        movieData.add(movie);
     }
 }
 
