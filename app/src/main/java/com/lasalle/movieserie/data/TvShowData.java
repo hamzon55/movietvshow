@@ -11,4 +11,6 @@ import java.util.List;
 public interface TvShowData {
 
     List<TvShow> getSeries();
+
+    void add(TvShow tv);
 }

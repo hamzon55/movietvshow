@@ -31,11 +31,20 @@ public class ListTvShow extends AppCompatActivity {
         rcvt.setLayoutManager(llm);
 
 
-        tvShowManager = new TvShowManager();
+        tvShowManager =TvShowManager.getInstance();
         tvShowList = tvShowManager.getSeries();
 
         initializeAdapter();
 
+    }
+
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        tvShowList = tvShowManager.getSeries();
+        initializeAdapter();
     }
 
 

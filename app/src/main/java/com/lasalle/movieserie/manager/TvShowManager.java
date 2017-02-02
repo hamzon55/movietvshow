@@ -11,11 +11,19 @@ import java.util.List;
  */
 
 public class TvShowManager {
-
+    private static TvShowManager instance = null;
     private TvShowData tvShowData;
 
-    public TvShowManager() {
+
+    protected TvShowManager() {
         tvShowData = new TvShowDataMock();
+    }
+
+    public static TvShowManager getInstance() {
+        if (instance == null) {
+            instance = new TvShowManager();
+        }
+        return instance;
     }
 
 
@@ -25,4 +33,7 @@ public class TvShowManager {
     }
 
 
+    public void add(TvShow tv) {
+        tvShowData.add(tv);
+    }
 }

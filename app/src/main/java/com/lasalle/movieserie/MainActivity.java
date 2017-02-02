@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
 
             case R.id.add: {
-                Intent intent = new Intent(getApplicationContext(),AddMovie.class);
+                Intent intent = new Intent(getApplicationContext(),AddTvShow.class);
                 startActivity(intent);
                 break;
             }

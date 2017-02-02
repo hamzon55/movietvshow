@@ -19,9 +19,9 @@ public class TvShowDataMock implements TvShowData {
     public TvShowDataMock() {
 
         tvShowList = new ArrayList<>();
-        tvShowList.add(new TvShow("Test 1 ", 4, "Sebas :p"));
-        tvShowList.add(new TvShow("Test 2 ", 4, "Sebas :p"));
-        tvShowList.add(new TvShow("Test 3", 4, "Sebas :p"));
+        tvShowList.add(new TvShow("Test 1 ", "4", "Sebas :p"));
+        tvShowList.add(new TvShow("Test 2 ", "4", "Sebas :p"));
+        tvShowList.add(new TvShow("Test 3", "4", "Sebas :p"));
 
 
     }
@@ -29,5 +29,10 @@ public class TvShowDataMock implements TvShowData {
     @Override
     public List<TvShow> getSeries() {
         return tvShowList;
+    }
+
+    @Override
+    public void add(TvShow tv) {
+        tvShowList.add(tv);
     }
 }
